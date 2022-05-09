@@ -1,0 +1,16 @@
+
+.list__area {
+    margin: 0 auto;
+    max-width: 1000px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.list__player {
+    margin: 0;
+    display: block;
+    width: 650px;
+    height: 400px;
+    border-radius: 5px;
+}

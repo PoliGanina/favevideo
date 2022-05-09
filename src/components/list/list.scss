@@ -1,0 +1,26 @@
+@import '../../variables.scss';
+
+.list {
+    list-style-type: none;
+    margin:0 0 20px 0;
+    padding: 30px;
+    min-width: 280px;
+    max-width: 1000px;
+    height: 100%;
+    // border-radius: 5px;
+    background: #fff;
+    box-shadow: -1px -1px 10px 2px rgba(61, 67, 66, 0.2);
+    &__title {
+        text-align: center;
+        font-size: 25px;
+        font-weight: 600;
+        color: $text-color;
+    }
+    ul {
+        margin-top: 20px;
+        padding: 0;
+    }
+}
+.fa-solid {
+    position: unset;
+}

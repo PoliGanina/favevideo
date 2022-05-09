@@ -1,0 +1,41 @@
+.list__item {
+    position: relative;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+        font-size: 15px;
+        font-weight: 400;
+        color: #064757;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.btn-trash {
+    width: 35px;
+    height: 35px;
+    margin: 3px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    color: #e5383b;
+    background-color: transparent;
+}
+
+.fa-square-check {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
+    color: #05aa28;
+    transition: 0.3s all;
+    opacity: 0.3;
+}
+.show {
+    opacity: 1;
+}
+

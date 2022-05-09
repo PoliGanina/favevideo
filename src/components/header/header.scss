@@ -1,0 +1,26 @@
+@import '../../variables.scss';
+
+.header {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    border-radius: 5px;
+    background: #fff;
+    // box-shadow: -1px -1px 10px 2px rgba(84, 154, 138, 0.2) inset;
+    box-shadow: -1px -1px 10px 2px rgba(61, 67, 66, 0.2);
+    text-align: center;
+    color: $text-color;
+
+    &__title {
+        font-size:70px;
+        font-weight: 600;
+    }
+    &__subtitle {
+        font-size: 28px;
+        font-weight: 400;
+    }
+
+}

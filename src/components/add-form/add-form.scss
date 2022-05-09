@@ -1,0 +1,28 @@
+@import '../../variables.scss';
+
+.add__form {
+    margin: 20px auto;
+    padding: 15px 30px;
+    max-width: 1000px;
+    height: 115px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: -1px -1px 10px 2px rgba(61, 67, 66, 0.2);
+
+    
+    form {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    h3 {
+        font-size: 25px;
+        font-weight: 400;
+        color: $text-color;
+    } 
+    input {
+        width: 350px;
+        margin-right: 20px;
+    }
+}
