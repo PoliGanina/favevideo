@@ -21,14 +21,36 @@ class App extends Component {
         urlToPlay: 'https://youtu.be/Pz3q2gr9mek'
     }
     this.maxId = 4;
-}
+  }
+
+  componentDidMount = () => {
+    if (localStorage.length !== 0) {
+      let stateData = [];
+      for(let i = 0; i < localStorage.length-1; i++) {
+        let elem = JSON.parse(localStorage.getItem(`${i}`));
+        stateData[i] = elem;
+      }
+    this.setState(({data: stateData}));
+    }
+  }
+
+  saveState = () => {
+    const {data,urlToPlay} = this.state;
+    localStorage.clear();
+    for (let i=0; i < data.length; i++) {
+      let objectValue = JSON.stringify(data[i]);
+      localStorage.setItem(`${i}`, objectValue);
+    }
+
+    localStorage.setItem('urlToPlay', urlToPlay);
+  }
 
   deleteItem = (id) => {
       this.setState(({data}) => {
           return {
               data: data.filter(item => item.id !== id)
           }
-      })
+      }, () => this.saveState())
   }
 
   addItem = (name, url) => {
@@ -43,8 +65,9 @@ class App extends Component {
         return {
             data: newArr
         }
-    });
+    }, () => this.saveState());
   }
+
   searchEmp = (items, term) => {
     if (term.length === 0) {
         return items;
@@ -69,7 +92,7 @@ class App extends Component {
       return {
         data: newArr
       }
-    })
+    }, () => this.saveState())
   }
 
   onPlay = (id) => {
