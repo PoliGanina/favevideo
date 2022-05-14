@@ -19,7 +19,7 @@ const List = ({data, onPlay, onDelete, onToggleWatched}) => {
     
         return (
             <div className="list">
-                <input type="text" className="list__title" defaultValue={'Your video list'}/>
+                <h2 type="text" className="list__title">Your video list</h2>
                 <ul>
                     {elements}
                 </ul>

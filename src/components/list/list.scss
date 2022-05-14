@@ -2,10 +2,8 @@
 
 .list {
     list-style-type: none;
-    margin:0 0 20px 0;
-    padding: 30px;
-    min-width: 280px;
-    max-width: 1000px;
+    padding: 30px 10px 20px 20px;
+    width: 300px;
     height: 400px;
     // border-radius: 5px;
     background: #fff;
@@ -36,4 +34,11 @@
 }
 .fa-solid {
     position: unset;
+}
+@media (max-width: 1023px) {
+    .list {
+        padding: 20px 0 10px 10px;
+        width: fit-content;
+        height: 200px;
+    }
 }

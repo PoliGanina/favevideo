@@ -1,9 +1,9 @@
 @import '../../variables.scss';
 
 .btn__group {
-    width: 450px;
+    width: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .btn {
@@ -20,3 +20,16 @@
 .btn-outline-light {
    outline:none;
 }
+
+@media (max-width: 1023px) {
+    .btn {
+        padding: 0 10px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 436px) {
+    .btn__group {
+        width: 300px;
+        margin-bottom: 7px;
+    }
+  }

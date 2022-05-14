@@ -18,20 +18,48 @@
   justify-content: space-between;
   align-items: center;
 }
+
 footer {
   text-align: center;
-  margin: 50px auto;
+  margin: 0 auto;
   max-width: 1000px;
-  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   h3 {
+    margin: 0;
     font-size: 14px;
     color: $text-color;
     text-decoration: none;
   }
 }
 .footer__link {
+  margin-left: 20px;
   font-size: 14px;
   color: $text-color;
-  text-decoration: none;
+  cursor: pointer;
 }
+@media (max-width: 767px) {
+  .navbar {
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+}
+@media (max-width: 436px) { 
+  .App {
+    padding: 30px 15px 15px 15px;
+  }
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  footer {
+    flex-direction: column;
+  }
+}
+
 
