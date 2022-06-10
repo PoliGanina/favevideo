@@ -97,9 +97,7 @@ class App extends Component {
 
   onPlay = (id) => {
     let index = this.state.data.findIndex(elem => elem.id === id);
-    console.log(index);
     let videoToPlay = this.state.data[index].url;
-    console.log(videoToPlay);
     this.setState(({urlToPlay: videoToPlay}))
   }
 

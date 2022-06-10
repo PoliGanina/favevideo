@@ -41,9 +41,11 @@ class AddForm extends Component {
                         className="form-control new-post-label"
                         placeholder="Video name"
                         name="name"
+                        required
                         value={name} 
                         onChange={this.onValueChange}/>
                     <input type="text"
+                        required
                         className="form-control new-post-label"
                         placeholder="Copy video URL here"
                         name="url"
